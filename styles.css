@@ -1,0 +1,199 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e4e4e4;
+}
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Clickable Section */
+.clickable {
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.clickable.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.clickable:hover {
+    background-color: #f0f0f0;
+    border-color: #4CAF50;
+}
+
+/* Image Styling */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Events List Styling */
+#events ul {
+    list-style-type: none;
+}
+
+#events li {
+    margin: 5px 0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: flex;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Table Styling for Student Management */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    background-color: #fff;
+}
+
+.degree {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons a {
+    color: #4CAF50;
+    font-size: 1.2rem;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.icons a:hover {
+    color: #333;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Form Inputs */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Search Box */
+#search {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Animation for student adding/editing */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Adding transition for Table Row */
+tr {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Global Village</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>University of Global Village</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Class Schedule</a></li>
+                <li><a href="lecturetopic.html">Class Topics</a></li>
+                <li><a href="assignmentsandlab.html">Assignments & Lab</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome" class="clickable">
+            <h2>Welcome to Our University</h2>
+            <img src="university.jpg" alt="University Campus" class="responsive-img">
+            <p>Your journey to knowledge starts here!</p>
+        </section>
+        <section id="events" class="clickable">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Open Day: March 10, 2024</li>
+                <li>Graduation Ceremony: June 15, 2024</li>
+            </ul>
+        </section>
+        <section id="student-management">
+            <h2>Student Management</h2>
+            <div class="input-container">
+                <input type="text" id="name" placeholder="Name">
+                <input type="email" id="email" placeholder="Email">
+                <input type="number" id="age" placeholder="Age">
+                <input type="text" id="grade" placeholder="Grade">
+                <input type="text" id="degree" placeholder="Degree">
+                <button id="submit" onclick="addStudent()">Add Student</button>
+            </div>
+            <input type="text" id="search" class="search" placeholder="Search by Name, Email, or Degree" onkeyup="search()">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>Grade</th>
+                        <th>Degree</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 University of Global Village. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
